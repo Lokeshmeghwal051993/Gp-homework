@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>grid</title>
+    <style>
+        .grid {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* justify-content:space-evenly;
+             */
+            gap: 20px;
+            box-sizing:border-box;
+            /* border:1px solid black; */
+            /* flex-wrap:wrap; */
+        }
+
+        .grid-photo>img {
+            width: 400px;
+            border: 1px solid black;
+            /* transform:sacle(1); */
+            /* position:relative; */
+            /* width:fit-content; */
+            /* overflow:hidden; */
+        }
+
+        .grid-photo:hover img {
+            transform: scale(1.1);
+            transition: all 1s ease-in-out;
+            /* max-width:100%;
+            height:auto; */
+            /* background-color: rgba(147, 150, 151, 0.692); */
+            background:linear-gradient( rgba(147, 150, 151, 0.727));
+        }
+
+        .grid-data {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            padding: 25% 2% 5%;
+            display: none;
+            font-family: "Raleway", sans-serif;
+
+        }
+
+        .grid-photo {
+            position: relative;
+            width: fit-content;
+            overflow: hidden;
+            /* height:90vh; */
+            padding-bottom: 50px;
+        }
+
+        .grid-photo img:hover {
+            transition: all .5s ease-in-out;
+            background:linear-gradient( rgba(147, 150, 151, 0.727));
+        }
+
+        .grid-photo:hover .grid-data {
+            display: block;
+            color: white;
+        }
+
+        .grid-data i {
+            color: white;
+            font-size:20px
+        }
+        #link-2{
+            padding-left:20px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="grid-flex-1">
+
+            <div class="grid-photo">
+                <img src="../Gp-homework/img/portfolio/portfolio-1.jpg" alt="1">
+                <div class="grid-data">
+                    <h2>App1</h2>
+                    <h3>APP</h3>
+                    <a href="../Gp-homework/img/portfolio/portfolio-1.jpg"><i class="fa-solid fa-plus"
+                            id="link-1"></i></a><a href="#"><i class="fa-solid fa-link" id="link-2"></i></a>
+
+                </div>
+            </div>
+
+
+
+            <div class="grid-photo">
+
+                <img src="../Gp-homework/img/portfolio/portfolio-6.jpg" alt="1">
+                <div class="grid-data">
+                    <h2>App1</h2>
+                    <h3>APP</h3>
+                    <a href="../Gp-homework/img/portfolio/portfolio-1.jpg"><i class="fa-solid fa-plus"
+                            id="link-1"></i></a><a href="#"><i class="fa-solid fa-link" id="link-2"></i></a>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="grid-flex-2">
+
+            <div class="grid-photo">
+
+                <img src="../Gp-homework/img/portfolio/portfolio-2.jpg" alt="1">
+                <div class="grid-data">
+                    <h2>App1</h2>
+                    <h3>APP</h3>
+                    <a href="../Gp-homework/img/portfolio/portfolio-1.jpg"><i class="fa-solid fa-plus"
+                            id="link-1"></i></a><a href="#"><i class="fa-solid fa-link" id="link-2"></i></a>
+
+                </div>
+            </div>
+
+
+
+            <div class="grid-photo">
+
+                <img src="../Gp-homework/img/portfolio/portfolio-5.jpg" alt="1">
+                <div class="grid-data">
+                    <h2>App1</h2>
+                    <h3>APP</h3>
+                    <a href="../Gp-homework/img/portfolio/portfolio-1.jpg"><i class="fa-solid fa-plus"
+                            id="link-1"></i></a><a href="#"><i class="fa-solid fa-link" id="link-2"></i></a>
+
+                </div>
+            </div>
+
+
+            <div class="grid-photo">
+
+                <img src="../Gp-homework/img/portfolio/portfolio-9.jpg" alt="1">
+                <div class="grid-data">
+                    <h2>App1</h2>
+                    <h3>APP</h3>
+                    <a href="../Gp-homework/img/portfolio/portfolio-1.jpg"><i class="fa-solid fa-plus"
+                            id="link-1"></i></a><a href="#"><i class="fa-solid fa-link" id="link-2"></i></a>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="grid-flex-3">
+
+            <div class="grid-photo">
+
+                <img src="../Gp-homework/img/portfolio/portfolio-3.jpg" alt="1">
+                <div class="grid-data">
+                    <h2>App1</h2>
+                    <h3>APP</h3>
+                    <a href="../Gp-homework/img/portfolio/portfolio-1.jpg"><i class="fa-solid fa-plus"
+                            id="link-1"></i></a><a href="#"><i class="fa-solid fa-link" id="link-2"></i></a>
+
+                </div>
+            </div>
+
+
+
+            <div class="grid-photo">
+
+                <img src="../Gp-homework/img/portfolio/portfolio-4.jpg" alt="1">
+                <div class="grid-data">
+                    <h2>App1</h2>
+                    <h3>APP</h3>
+                    <a href="../Gp-homework/img/portfolio/portfolio-1.jpg"><i class="fa-solid fa-plus"
+                            id="link-1"></i></a><a href="#"><i class="fa-solid fa-link" id="link-2"></i></a>
+
+                </div>
+            </div>
+
+
+
+            <div class="grid-photo">
+
+                <img src="../Gp-homework/img/portfolio/portfolio-7.jpg" alt="1">
+                <div class="grid-data">
+                    <h2>App1</h2>
+                    <h3>APP</h3>
+                    <a href="../Gp-homework/img/portfolio/portfolio-1.jpg"><i class="fa-solid fa-plus"
+                            id="link-1"></i></a><a href="#"><i class="fa-solid fa-link" id="link-2"></i></a>
+
+                </div>
+            </div>
+
+
+            <div class="grid-photo">
+
+                <img src="../Gp-homework/img/portfolio/portfolio-8.jpg" alt="1">
+                <div class="grid-data">
+                    <h2>App1</h2>
+                    <h3>APP</h3>
+                    <a href="../Gp-homework/img/portfolio/portfolio-1.jpg"><i class="fa-solid fa-plus"
+                            id="link-1"></i></a><a href="#"><i class="fa-solid fa-link" id="link-2"></i></a>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
